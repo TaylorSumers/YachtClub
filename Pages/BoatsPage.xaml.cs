@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Boats.Entities;
 using static Boats.Entities.AppConnect;
+using Boats.Windows;
 
 namespace Boats.Pages
 {

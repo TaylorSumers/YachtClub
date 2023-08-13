@@ -64,10 +64,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="BoatInfoWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
+    <Compile Include="Windows\BoatInfoWindow.xaml.cs">
+      <DependentUpon>BoatInfoWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -75,9 +74,6 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="BoatInfoWindow.xaml.cs">
-      <DependentUpon>BoatInfoWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Entities\AdditionalEquipment.cs">
       <DependentUpon>DatabaseModel.tt</DependentUpon>
@@ -145,6 +141,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Pages\BoatsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\BoatInfoWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

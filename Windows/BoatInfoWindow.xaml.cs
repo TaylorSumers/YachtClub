@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Boats.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,10 +12,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using Boats.Entities;
 using static Boats.Entities.AppConnect;
 
-namespace Boats
+namespace Boats.Windows
 {
     /// <summary>
     /// Interaction logic for BoatInfoWindow.xaml
