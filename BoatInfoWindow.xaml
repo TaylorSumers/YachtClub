@@ -1,0 +1,61 @@
+﻿<Window x:Class="Boats.BoatInfoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Boats"
+        mc:Ignorable="d"
+        Title="Информация о лодке" Height="450" Width="400">
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Grid.Column" Value="1"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="ComboBox">
+            <Setter Property="Grid.Column" Value="1"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.4*"/>
+            <ColumnDefinition Width="0.6*"/>
+        </Grid.ColumnDefinitions>
+        
+        <TextBlock Text="Модель"/>
+        <TextBlock Text="Тип" Grid.Row="1"/>
+        <TextBlock Text="Кол-во гребцов" Grid.Row="2"/>
+        <TextBlock Text="Дерево" Grid.Row="3"/>
+        <TextBlock Text="Цвет" Grid.Row="4"/>
+        <TextBlock Text="Цена" Grid.Row="5"/>
+
+        <TextBox Name="tbxModel" Text="{Binding BoatModel}"/>
+        <ComboBox Grid.Row="1" Name="cbxType" DisplayMemberPath="BoatTypeName"
+                  SelectedItem="{Binding BoatType1}"/>
+        <TextBox Grid.Row="2" Name="tbxRowersAmount" Text="{Binding BoatRowersNum}"/>
+        <ComboBox Grid.Row="3" Name="cbxWood" DisplayMemberPath="WoodTypeName"
+                  SelectedItem="{Binding WoodType}"/>
+        <ComboBox Grid.Row="4" Name="cbxColor" DisplayMemberPath="ColorName" 
+                  SelectedItem="{Binding Color}"/>
+        <TextBox Grid.Row="5" Name="tbxCost" Text="{Binding BoatCost}"/>
+
+        <Button Name="btnSave" Click="btnSave_Click" Grid.Row="6" Grid.Column="1"
+                Height="30" Width="100" Content="Сохранить"/>
+    </Grid>
+    
+</Window>

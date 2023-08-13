@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b8d37fc0ff3e4877b60d9e24b8021e13" Name="Diagram1">
+        <EntityTypeShape EntityType="YachtClubModel.AdditionalEquipment" Width="1.5" PointX="3" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="YachtClubModel.Address" Width="1.5" PointX="0.75" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="YachtClubModel.Boat" Width="1.5" PointX="3" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="YachtClubModel.BoatEquipment" Width="1.5" PointX="5.25" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="YachtClubModel.BoatType" Width="1.5" PointX="0.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="YachtClubModel.City" Width="1.5" PointX="1.5" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="YachtClubModel.Client" Width="1.5" PointX="3" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="YachtClubModel.Color" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="YachtClubModel.Document" Width="1.5" PointX="0.75" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="YachtClubModel.DocumentType" Width="1.5" PointX="1.5" PointY="23.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="YachtClubModel.Order" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="YachtClubModel.Organization" Width="1.5" PointX="0.75" PointY="25.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="YachtClubModel.Street" Width="1.5" PointX="1.5" PointY="20.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="YachtClubModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="YachtClubModel.WoodType" Width="1.5" PointX="0.75" PointY="7.375" IsExpanded="true" />
+        <AssociationConnector Association="YachtClubModel.FK__BoatEquip__Equip__398D8EEE" ManuallyRouted="false" />
+        <AssociationConnector Association="YachtClubModel.FK__Address__Address__5070F446" ManuallyRouted="false" />
+        <AssociationConnector Association="YachtClubModel.FK__Address__Address__5165187F" ManuallyRouted="false" />
+        <AssociationConnector Association="YachtClubModel.FK__Client__ClientAd__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="YachtClubModel.FK__Boat__BoatColor__35BCFE0A" ManuallyRouted="false" />
+        <AssociationConnector Association="YachtClubModel.FK__Boat__BoatType__33D4B598" ManuallyRouted="false" />
+        <AssociationConnector Association="YachtClubModel.FK__Boat__BoatWood__34C8D9D1" ManuallyRouted="false" />
+        <AssociationConnector Association="YachtClubModel.FK__BoatEquipm__Boat__38996AB5" ManuallyRouted="false" />
+        <AssociationConnector Association="YachtClubModel.FK__Order__OrderBoat__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="YachtClubModel.FK__Client__ClientDo__44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="YachtClubModel.FK__Client__ClientOr__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="YachtClubModel.FK__Order__OrderClie__48CFD27E" ManuallyRouted="false" />
+        <AssociationConnector Association="YachtClubModel.FK__Document__Docume__59FA5E80" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
