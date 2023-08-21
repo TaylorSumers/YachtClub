@@ -5,8 +5,45 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Boats"
         mc:Ignorable="d"
-        Title="Яхт-клуб" Height="720" Width="1280">
+        Icon="Resources/icon.png"
+        Title="Sochi Grand Marina" Height="720" Width="1280">
     <Grid>
-        <Frame Name="MainFrame" NavigationUIVisibility="Hidden"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+            <Image Source="Resources/GrandMarinaLogo.png" Height="100"/>
+            <ListBox Name="lbMenu" Margin="30 0" Height="50" SelectionChanged="lbMenu_SelectionChanged" BorderBrush="Transparent">
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Horizontal"/>
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+                <ListBox.Resources>
+                    <Style TargetType="ListBoxItem">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="ListBoxItem">
+                                    <Border Background="{TemplateBinding Background}">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Property="Width" Value="100"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter Property="Background" Value="#FF0C3C4E"/>
+                                <Setter Property="Foreground" Value="White"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </ListBox.Resources>
+                <ListBoxItem Content="О КЛУБЕ" Name="lbiInfo"/>
+                <ListBoxItem Content="КУПИТЬ ЯХТУ"/>
+            </ListBox>
+        </StackPanel>
+        <Frame Grid.Row="1" Name="MainFrame" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>

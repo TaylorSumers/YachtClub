@@ -1,0 +1,35 @@
+﻿<Page x:Class="Boats.Pages.InfoPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Boats.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="1500" d:DesignWidth="1180"
+      Title="InfoPage">
+
+    <Grid Background="White">
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" >
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBlock Text="СТОЯНКА ЯХТ И КАТЕРОВ В СОЧИ" VerticalAlignment="Center" Margin="20" FontSize="30" FontWeight="SemiBold" FontFamily="Times New Roman"/>
+                <Line X1="0" Y1="100" X2="2000" Y2="100" Stroke="LightGray" StrokeThickness="2"/>
+                <StackPanel Margin="100, 50, 100, 0" Grid.Row="1">
+                    <TextBlock FontSize="17" TextWrapping="Wrap" Text="Cамая современная, комфортная и безопасная стоянка на Черном море с полностью защищенной от волнения акваторией. В настоящий момент гавань может принимать до 300 яхт, в том числе суперъяхты длиной до 140 метров."/>
+                    <Image Margin="0 50" Source="/Resources/Yacht1.jpg"/>
+                    <TextBlock FontSize="17" TextWrapping="Wrap" Margin="0 0 0 25" Text="Яхтенная марина предлагает своим клиентам широкий спектр услуг: 24-х часовой консьерж-сервис, топливную заправку, водо- электро снабжение, сервисное обслуживание яхт, включая судоподъем до 40 тонн - одним словом, все, что необходимо владельцу катера или яхты."/>
+                    <TextBlock FontSize="17" TextWrapping="Wrap" Margin="0 0 0 25" Text="Особое географическое положение порта обеспечивает не только круглогодичную навигацию, но и возможность за несколько часов дойти на быстроходной моторной яхте до берегов и портов Крыма, Грузии, Турции, Румынии, Болгарии. "/>
+                    <TextBlock FontSize="17" TextWrapping="Wrap" Margin="0 0 0 25" Text="Всего в 1 часе езды от марины на Красной поляне расположены лучшие в России горнолыжные курорты. Легко доступны и многие другие достопримечательности: Олимпийский Парк, Трасса Formula 1 Сочи Автодром, самый длинный в мире подвесной мост, парки, заповедники и водопады."/>
+                    <TextBlock FontSize="17" TextWrapping="Wrap" Margin="0 0 0 25" Text="Как и в других портовых городах, сочинская марина является центром туристического притяжения и излюбленным местом отдыха жителей и гостей города. Инфраструктура включает в себя бары и рестораны, бутики и торговую галерею - все это в шаговой доступности от яхты."/>
+                    <StackPanel Orientation="Horizontal" Grid.Row="2" Height="70">
+                        <Image Source="\Resources\BurevestnikLogo.jpg"/>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Page>

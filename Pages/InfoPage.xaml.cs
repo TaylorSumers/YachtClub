@@ -1,5 +1,4 @@
-﻿using Boats.Pages;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,23 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Boats
+namespace Boats.Pages
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for InfoPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class InfoPage : Page
     {
-        public MainWindow()
+        public InfoPage()
         {
             InitializeComponent();
-            lbiInfo.IsSelected = true;
-        }
-
-        private void lbMenu_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if(lbiInfo.IsSelected)
-                MainFrame.Content = new InfoPage();
         }
     }
 }
